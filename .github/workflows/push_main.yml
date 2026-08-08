@@ -4,12 +4,13 @@ on: push
 
 jobs:
   test:
-    runs on: 
+    runs-on: ubuntu-latest
       steps:
         - name:  welcome to inel
-          run: |
+          run:  |
             echo "Test the pipeline"
             echo "Hello workflow_dispatch"
             echo "Test the connection"
+
 
 

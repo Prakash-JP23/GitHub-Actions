@@ -33,4 +33,10 @@ COPY src/ ./src/
 USER node
 
 CMD ["node", "src/index.js"]
+Welcome
+Add
+-lesson
+Add
+test
+code
 

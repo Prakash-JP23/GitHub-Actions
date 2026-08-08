@@ -10,7 +10,7 @@ name: 04 - On Push (filtered)
 on:
   push:
     branches:
-      - main
+      - master
       - 'release/**'        # any branch starting with release/  (** = wildcard)
     paths:
       - 'sample-app/**'     # only run if something in the app folder changed

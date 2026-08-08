@@ -1,0 +1,15 @@
+name: Trigger_push
+
+on: push
+
+jobs:
+  test:
+    runs on: 
+      steps:
+        - name:  welcome to inel
+          run: |
+            echo "Test the pipeline"
+            echo "Hello workflow_dispatch"
+            echo "Test the connection"
+
+

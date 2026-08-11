@@ -27,7 +27,7 @@ on:
         type: boolean
       create:
         description: "This for Test to deployments"
-        require: true
+        required: true
         default: "Nippon"
         type: string
 
@@ -42,7 +42,7 @@ jobs:
           echo "Dry run?    : ${{ inputs.dry_run }}"
 
       - name: welcome to INEL
-        run: 
+        run: |
           echo "create : ${{inputs.create}}"
 
 

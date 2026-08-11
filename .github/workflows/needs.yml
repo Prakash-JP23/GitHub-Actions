@@ -36,7 +36,7 @@ jobs:
 
   # Both of these wait for `build`, then run in parallel with each other.
   test:
-    needs: build1                 # single dependency
+    needs: lint                 # single dependency
     runs-on: ubuntu-latest
     steps:
       - run: |

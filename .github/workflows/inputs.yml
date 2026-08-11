@@ -42,7 +42,8 @@ jobs:
           echo "Dry run?    : ${{ inputs.dry_run }}"
 
       - name: welcome to INEL
-        run: echo "create : ${{inputs.create}}"
+        run: 
+          echo "create : ${{inputs.create}}"
 
 
             

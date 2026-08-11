@@ -44,7 +44,7 @@ jobs:
           sleep 10
 
   lint:
-    needs: build1
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - run: |

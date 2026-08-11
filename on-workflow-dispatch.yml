@@ -5,7 +5,9 @@
 name: 05 - Manual Run With Inputs
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
     inputs:
       environment:
         description: 'Target environment'
@@ -28,7 +30,7 @@ on:
       create:
         description: "This for Test to deployments"
         required: true
-        default: "Nippon"
+        default: "welcome"
         type: string
 
 jobs:
